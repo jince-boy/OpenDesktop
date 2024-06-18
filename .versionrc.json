@@ -1,0 +1,26 @@
+{
+  "types": [
+    { "type": "feat", "section": "Features" },
+    { "type": "fix", "section": "Bug Fixes" },
+    { "type": "docs", "section": "Documentation" },
+    { "type": "style", "section": "Styles" },
+    { "type": "refactor", "section": "Code Refactoring" },
+    { "type": "perf", "section": "Performance Improvements" },
+    { "type": "test", "section": "Tests" },
+    { "type": "build", "section": "Build System" },
+    { "type": "ci", "section": "Continuous Integration" },
+    { "type": "chore", "section": "Chores" },
+    { "type": "revert", "section": "Reverts" }
+  ],
+  "releaseCommitMessageFormat": "chore(release): {{currentTag}}",
+  "preset": "angular",
+  "writerOpts": {
+    "headerPartial": "\n{{#if isPatch}}## [{{version}}](https://github.com/jince-boy/OpenDesktop/compare/{{previousTag}}...{{currentTag}}) ({{date}}){{else}}# [{{version}}](https://github.com/jince-boy/OpenDesktop/compare/{{previousTag}}...{{currentTag}}) ({{date}}){{/if}}\n",
+    "commitPartial": "* {{header}}\n",
+    "footerPartial": "",
+    "transform": null,
+    "groupBy": "type",
+    "commitGroupsSort": "title",
+    "commitsSort": ["scope", "subject"]
+  }
+}

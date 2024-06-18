@@ -1,0 +1,70 @@
+{
+  "name": "open-desktop",
+  "author": "JinCe",
+  "description": "Vue3 + TypeScript实现的仿win11桌面端,下载依赖导入组件即可使用。",
+  "license": "MIT",
+  "repository": "https://github.com/jince-boy/OpenDesktop.git",
+  "homepage": "https://desktop.whimquest.com",
+  "keywords": [
+    "desktop",
+    "win11",
+    "open-desktop",
+    "OpenDesktop",
+    "whimquest",
+    "windows11",
+    "windows",
+    "system",
+    "window",
+    "win10",
+    "BrowserWindow"
+  ],
+  "version": "0.0.6",
+  "type": "module",
+  "files": [
+    "lib"
+  ],
+  "main": "lib/open-desktop.umd.cjs",
+  "module": "lib/open-desktop.js",
+  "types": "lib/packages/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./lib/packages/index.d.ts",
+      "import": "./lib/open-desktop.js",
+      "require": "./lib/open-desktop.umd.cjs"
+    },
+    "./lib/style.css": {
+      "import": "./lib/style.css",
+      "require": "./lib/style.css"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview",
+    "lib": "vue-tsc && vite build --config vite.lib.config.ts",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
+  },
+  "dependencies": {
+    "vue": "^3.4.27"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.12",
+    "@vicons/antd": "^0.12.0",
+    "@vicons/carbon": "^0.12.0",
+    "@vicons/fa": "^0.12.0",
+    "@vicons/fluent": "^0.12.0",
+    "@vicons/ionicons4": "^0.12.0",
+    "@vicons/ionicons5": "^0.12.0",
+    "@vicons/material": "^0.12.0",
+    "@vicons/tabler": "^0.12.0",
+    "@vicons/utils": "^0.1.4",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "conventional-changelog-cli": "^5.0.0",
+    "less": "^4.2.0",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.11",
+    "vite-plugin-dts": "^3.9.1",
+    "vite-plugin-vue-devtools": "^7.2.1",
+    "vue-tsc": "^2.0.19"
+  }
+}
