@@ -1,19 +1,19 @@
-# 系统默认应用
+# Default System Applications
 
-本框架默认提供了一些应用让使用者快速使用。
+This framework provides some default applications for users too quickly.
 
-## 应用列表 {#setting}
+## Application List {#setting}
 
-### 设置
+### Settings
 
 ``` ts
 {
-    name: '设置',
+    name: 'Settings',
     key: 'setting',
     icon: setting,
     version: '1.0.0',
     window: {
-        title: '设置',
+        title: 'Settings',
         width: 1100,
         minWidth: 1000,
         minHeight: 560,

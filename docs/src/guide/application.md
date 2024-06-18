@@ -1,12 +1,12 @@
-# 应用及窗口
+# Application and Window
 
-框架目前版本默认的是一个应用一个窗口，我们可以通过在初始化系统实例的时候添加一个自定义应用。
+The current version of the framework defaults to one application per window. We can add a custom application when initializing the system instance.
 
 <div class="tip custom-block" style="padding-top: 8px">
-     后续版本会更新动态添加应用。
+      Dynamic addition of applications will be updated in future versions.
 </div>
 
-1. 你需要了解`Application`以及`BrowserWindow`的对象结构：
+1. You need to understand the object structure of `Application` and `BrowserWindow`
 
     ``` ts
     interface Application {
@@ -39,7 +39,7 @@
         backgroundColor: string;
     }
     ```
-2. 接下来我们可以创建一个自己的组件
+2. Next, we can create our own component.
 
     ``` vue
     <script setup lang="ts">
@@ -55,7 +55,7 @@
     </style>
     ```
 
-3. 并在初始化的时候添加到初始化应用参数中
+3. And add it to the initialization application parameters during initialization.
 
    ``` ts
    const system = initSystem({
@@ -74,6 +74,6 @@
    })
    ```
    
-   在这个例子中，我们创建了一个名为`JavaApp`的新Vue组件，并将其作为自定义应用添加到`initSystem`函数中。 `Application` 接口定义应用程序的属性，包括其名称、键、图标、版本以及关联的 `BrowserWindow`。`BrowserWindow` 接口定义窗口的属性，例如其标题、键、内容（即 Vue 组件）、图标、尺寸、位置以及各种窗口状态。
+   In this example, we create a new Vue component called `JavaApp` and add it as a custom application to the `initSystem` function. The `Application` interface defines the properties of an application, including its name, key, icon, version, and the associated `BrowserWindow`. The `BrowserWindow` interface defines the properties of the window, such as its title, key, content (which is the Vue component), icon, dimensions, position, and various window states.
 
-   通过将 `JavaApp` 组件添加为 `BrowserWindow` 的 `content` 属性，它将在系统初始化时在自定义应用程序窗口内呈现。
+   By adding the `JavaApp` component as the `content` property of the `BrowserWindow`, it will be rendered within the custom application window when the system is initialized.

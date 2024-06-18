@@ -11,7 +11,7 @@ Just want to try it out? Skip to the [Quickstart](./getting-started).
 
 </div>
 
-## Use Cases
+## Use Example
 
 - **Online Office Suite**
 

@@ -44,6 +44,17 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
                 {text: 'What is OpenDesktop', link: 'what-is-open-desktop'},
                 {text: 'Getting Started', link: 'getting-started'}
             ]
+        },
+        {
+            text: 'Usage',
+            items: [
+                {"text": "Initialize System", "link": "init-system"},
+                {"text": "Shortcut", "link": "shortcut"},
+                {"text": "Start Menu", "link": "start-menu"},
+                {"text": "Taskbar", "link": "taskbar"},
+                {"text": "Applications and Windows", "link": "application"},
+                {"text": "Default System Applications", "link": "default-application"}
+            ]
         }
     ]
 }
@@ -51,10 +62,7 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
 function sidebarReference(): DefaultTheme.SidebarItem[] {
     return [
         {
-            text: "Reference",
-            items: [
-                {text: "ps", link: 'index'}
-            ]
+            text: "Reference"
         }
     ]
 }
