@@ -32,7 +32,7 @@ function nav(): DefaultTheme.NavItem[] {
         {text: 'Home', link: '/'},
         {text: 'Guide', link: '/guide/what-is-open-desktop', activeMatch: '/guide/'},
         {text: 'Reference', link: '/reference/', activeMatch: '/reference/'},
-        {text: 'changelog', link: 'https://github.com/jince-boy/OpenDesktop/blob/main/CHANGELOG.md'}
+        {text: 'ChangeLog', link: 'https://github.com/jince-boy/OpenDesktop/blob/main/CHANGELOG.md'}
     ]
 }
 
