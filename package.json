@@ -42,7 +42,7 @@
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
     "lib": "vue-tsc && vite build --config vite.lib.config.ts",
-    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
   },
   "dependencies": {
     "vue": "^3.4.27"
