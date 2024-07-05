@@ -4,7 +4,7 @@
   "description": "Vue3 + TypeScript实现的仿win11桌面端,下载依赖导入组件即可使用。",
   "license": "MIT",
   "repository": "https://github.com/jince-boy/OpenDesktop.git",
-  "homepage": "https://desktop.whimquest.com",
+  "homepage": "https://desktop.jince.tech",
   "keywords": [
     "desktop",
     "win11",
@@ -18,7 +18,7 @@
     "win10",
     "BrowserWindow"
   ],
-  "version": "0.0.5",
+  "version": "0.0.6",
   "type": "module",
   "files": [
     "lib"
