@@ -19,7 +19,7 @@ export const en = defineConfig({
         },
         footer: {
             message: 'Released under the MIT License.',
-            copyright: `Copyright © 2024-${new Date().getFullYear()} OpenDesktop`
+            copyright: `Copyright © 2024-${new Date().getFullYear()} OpenDesktop <a href="https://beian.miit.gov.cn/">冀ICP备2022001116号-4</a>`
         },
         outline: {
             label: 'On this page'
